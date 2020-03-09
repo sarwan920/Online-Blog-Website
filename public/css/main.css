@@ -28,10 +28,10 @@ body{
   height: 20rem;
   width: 40rem;
   transition: transform .5s ease;
-
- 
  
 }
+
+
 
 .image:hover{
     transform: scale(1.2); 
@@ -81,3 +81,15 @@ body{
 }
 
 
+.align-center{
+    text-align: center;
+}
+
+.form-fields{
+    padding: 1.5rem;
+}
+
+label{
+    display:inline-flex;
+    align-items: flex-start;
+}
