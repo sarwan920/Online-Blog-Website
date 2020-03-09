@@ -1,0 +1,36 @@
+ .main-header {
+     /* background-color: #8ebdbd; */
+     padding: 2%;
+ }
+
+
+
+ .nav-list-item {
+     display: inline;
+     /* padding: 2%; */
+ }
+
+ .nav-links {
+     text-decoration: none;
+    
+     color: #e25252;
+     font-size: large;
+     /* font-weight: bold; */
+     padding-left: 3%;
+     padding-right: 3%;
+
+ }
+
+ .nav-links:hover{
+     color: black;
+ }
+
+ 
+ .nav-list {
+    list-style-type: none;
+    list-style-position: inside;
+    text-align: center;
+
+    /* padding: 2%; */
+
+}

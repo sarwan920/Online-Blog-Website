@@ -1,0 +1,22 @@
+
+.jumbotron{
+    background-color: #ffffff;
+    padding: 10%;
+    border-radius: 3rem;
+
+    
+}
+
+.message{
+    padding: 0.5rem;
+}
+
+.hr-class{
+background-color:#da5000;
+    height: 1px;
+}
+
+.main-container{
+    padding:5%;
+   
+}
