@@ -5,3 +5,17 @@ exports.getIndex= (req,res,next)=>{
         pageTitle:'Technical Blogs'
     });
 }
+
+exports.getArticles=(req,res,next)=>{
+
+    res.render('articles',{
+        pageTitle:'Articles'
+    });
+
+}
+
+exports.getContact=(req,res,next)=>{
+    res.render('contact',{
+        pageTitle:'Contact'
+    });
+}
