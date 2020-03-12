@@ -1,0 +1,26 @@
+<%-include('./includes/head')%>
+
+<%-include('./includes/navigation')%>
+
+
+<p><%=saved%></p>
+    <form action="/write-for-us" method="POST" class="blog-form">
+
+        <div class="blog-form-div">
+            <label  for="">Title</label>
+            <input class="blog-input" id="title-input" type="text" name="title" id="">
+        </div>
+        <div class="blog-form-div">
+            <label for="">Description</label>
+            <textarea class="blog-input" name="description" id="" cols="60" rows="15"></textarea>
+        </div>
+      
+        <div > 
+            <button type="submit" class="blog-button">Submit</button>
+        </div>
+
+    </form>
+
+
+
+    <%-include('./includes/end')%>

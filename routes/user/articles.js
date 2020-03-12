@@ -10,4 +10,10 @@ router.get('/articles',articleController.getArticles);
 
 router.get('/contact',articleController.getContact);
 
+router.post('/write-for-us',articleController.postWriteForUs);
+
+router.get('/write-for-us',articleController.getWriteForUs);
+
+
+
 module.exports=router;

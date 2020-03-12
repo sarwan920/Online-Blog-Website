@@ -1,65 +1,67 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    margin: 1%;
+body {
+
     /* font-family: 'Inconsolata', monospace; */
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 2px;
+background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80);
+}
+
+.main-article-section {
+   
+}
+
+
+.blog-form-div {
+    margin-top: 2%;
+}
+
+.blog-form {
+    max-width: 100%;
+    margin-left: 30%;
+
 }
 
 
 
-.main-section{
-    /* background-color: #20a2ca; */
-    margin:2%;
+#title-input {
+    height: 30px;
 }
 
-.main-div{
-    padding-left: 3%;
-    padding: 1%;
+.blog-input {
+    font-size: 20px;
+    display: block;
     margin-bottom: 2%;
+    width: 50%;
+    outline-color: #cc2222;
+    border: black solid 2px;
+    background-color: transparent;
 
 }
 
-.image{
-  height: 20rem;
-  width: 40rem;
-  transition: transform .5s ease;
- 
+
+
+.blog-input:focus {
+    box-shadow: 0 0 5px #cc2222;
+    /* padding: 3px 0px 3px 3px;
+    margin: 5px 1px 3px 0px; */
+    border: 2px solid #cc2222;
+
+
+}
+
+.blog-form-div label {
+    color: #000000;
+    font-weight: bolder;
 }
 
 
-
-.image:hover{
-    transform: scale(1.2); 
-    animation-fill-mode: forwards;
-    overflow: hidden;
-    transition: transform .5s ease;
-    
-}
-
-.main-image-div{
-    /* padding: 1%; */
-    
-    /* width: fit-content; */
-    text-align: center;
-    
-    
-}
-
-
-
-
-
-.main-article{
-    text-align: justify;
-    margin-top:2%;
-}
-
-.blog-button{
+.blog-button {
     font-family: inherit;
     font-weight: bold;
     letter-spacing: inherit;
@@ -70,26 +72,12 @@ body{
     cursor: pointer;
     border: black 2px;
     text-decoration: none;
- 
+
 }
 
-.blog-button:hover{
-    background-color: black;
+.blog-button:hover {
+    background-color: #080101;
     color: #cc2222;
     /* -webkit-transition-duration: 0.4s; Safari */
-    transition-duration: 0.5s;
-}
-
-
-.align-center{
-    text-align: center;
-}
-
-.form-fields{
-    padding: 1.5rem;
-}
-
-label{
-    display:inline-flex;
-    align-items: flex-start;
+    transition-duration: 0.7s;
 }
