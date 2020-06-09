@@ -3,19 +3,33 @@
 <body>
     <%-include('./includes/navigation')%>
 
-    <div class="main-article-section">
-        <div class="title">
-            <h1>Title</h1>
-        </div>
-        <div class="paragraph">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate velit corrupti itaque cumque eos
-                eum, adipisci unde aspernatur. Iusto eaque illum suscipit atque voluptates qui, iure voluptate
-                blanditiis officiis voluptatum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
-                perferendis ex vel dolore libero cupiditate dolor maxime. Commodi pariatur ab minima, fuga neque, sunt
-                eaque possimus totam necessitatibus sequi perspiciatis. </p>
+  <% if(articles.length>0){ %>
+
+    <% for ( let article of articles){ %>
+
+        <div class="card">
+
+            <div class="div-header">
+                <a href="#" ><h1><%=article.title%></h1></a>
+            
+            </div>
+           <div>
+            <p><%=article.description%></p>
         </div>
 
-    </div>
+        <div>
+            <a href="" type="button" class="">Read More</a>
+        </div>
+        </div>
+       
+        
+    <% } %>
+
+    <%  } else { %>
+
+        <h1>No Articles Found</h1>
+
+        <%}%>
 
 
 </body>

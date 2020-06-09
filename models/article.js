@@ -11,6 +11,10 @@ saveArticle(){
         return database.execute('INSERT INTO blogs (title,description) VALUES (? , ?)',[this.title,this.description]);
     }
 
+    static fetchAll(){
+        return database.execute('SELECT * FROM blogs');
+    }
+
     static deleteArticle(){
 
     }

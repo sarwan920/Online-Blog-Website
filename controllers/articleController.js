@@ -3,8 +3,21 @@ const Article=require('../models/article');
 
 exports.getIndex= (req,res,next)=>{
     // res.send('I am Working with Great Honour');
-    res.render('index',{
-        pageTitle:'Technical Blogs'
+    // res.render('index',{
+    //     pageTitle:'Technical Blogs'
+    // });
+
+    Article.fetchAll()
+    .then(([rows,fieldData])=>{
+        res.render('index',{
+            pageTitle:'Technical Blogs',
+            articles:rows,
+            path:'/'
+        });
+
+    })
+    .catch(err=>{
+        console.log(err);
     });
 }
 
@@ -24,8 +37,7 @@ exports.getContact=(req,res,next)=>{
 
 exports.getWriteForUs=(req,res,next)=>{
     res.render('add-article',{
-        pageTitle:'Write for Us',
-        saved:null
+        pageTitle:'Write for Us'
     });
 }
 
@@ -38,9 +50,7 @@ exports.postWriteForUs=(req,res,next)=>{
     article.saveArticle()
     .then(()=>{
         console.log("Saved Successfully");
-        res.redirect('/write-for-us',{
-            saved:'Article Saved Successfull'
-        });
+        res.redirect('/');
     })
     .catch((err)=>{
         console.log(err);
